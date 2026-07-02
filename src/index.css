@@ -1,0 +1,365 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f5f6f8;
+  color: #1d1d1f;
+}
+
+/* セクション共通 */
+section {
+  padding: 120px 20px 100px;
+  text-align: center;
+}
+
+/* 見出し */
+h1, h2 {
+  margin: 0 0 30px;
+}
+
+/* カード系 */
+.salary-box,
+.flow-box,
+.recruit-box,
+.message {
+  background: #fff;
+  padding: 24px;
+  border-radius: 14px;
+  max-width: 700px;
+  margin: 20px auto;
+  text-align: left;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* ボタン */
+.primary-btn {
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  font-weight: 500;
+}
+
+/* フッター */
+.footer {
+  padding: 50px 20px;
+  background: #111;
+  color: #fff;
+  margin-top: 80px;
+}
+
+/* リンクボタン */
+.link-btn {
+  font-size: 16px;
+  color: #0071e3;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+section {
+  padding: 100px 20px;
+}
+
+h1, h2 {
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+/* ボタン復活（重要） */
+.primary-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 999px;
+  background: #0071e3;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.primary-btn:hover {
+  transform: translateY(-2px);
+  transition: 0.2s;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.stats div {
+  text-align: center;
+  padding: 20px;
+  min-width: 120px;
+}
+
+.stats h3 {
+  font-size: 32px;
+  margin: 0;
+  color: #0071e3;
+}
+
+.stats p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #666;
+}
+
+/* 会社情報カード感復活 */
+.message {
+  margin-top: 40px;
+  padding: 24px;
+  background: #fff;
+  border-radius: 14px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.ceo-name {
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.stats div {
+  text-align: center;
+  padding: 20px;
+  min-width: 120px;
+}
+
+.stats h3 {
+  font-size: 32px;
+  margin: 0;
+  color: #0071e3;
+}
+
+.stats p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.message {
+  margin-top: 40px;
+  padding: 24px;
+  background: #fff;
+  border-radius: 14px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.ceo-name {
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+#services .service-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+#services .service-item {
+  background: #fff;
+  border-radius: 14px;
+  padding: 24px;
+  width: 260px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#services .service-item h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+#services .service-item p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .hero h2 {
+    font-size: 22px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav {
+    display: none; /* シンプルにスマホでは非表示（まずはこれでOK） */
+  }
+
+  .service-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-item {
+    width: 90%;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  section {
+    padding: 80px 16px;
+  }
+}
+
+#contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+#contact input,
+#contact textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+#contact textarea {
+  min-height: 140px;
+  resize: none;
+}
+
+#contact button {
+  border: none;
+  cursor: pointer;
+}
+
+.footer {
+  text-align: center;
+  padding: 50px 20px;
+  background: #111;
+  color: #fff;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #ddd;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 16px 30px;
+
+  background: rgba(255,255,255,0.9);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.nav {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.nav a:hover {
+  opacity: 0.6;
+}
+
+.contact-btn {
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: #0071e3;
+  color: white !important;
+}
+
+@media (max-width: 768px) {
+  .recruit-box {
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .section {
+    text-align: center;
+  }
+
+  .recruit-box ul {
+    padding-left: 20px;
+  }
+
+  .recruit-box h3 {
+    text-align: center;
+  }
+
+  .recruit-box a {
+    display: inline-block;
+    margin-top: 10px;
+  }
+}
+　.recruit-box ul {
+  padding-left: 20px;
+  margin: 20px 0;
+}
+
+.recruit-box a {
+  display: inline-block;
+  margin-top: 20px;
+}
