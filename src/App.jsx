@@ -7,6 +7,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Services from "./components/Services";
 import Recruit from "./components/Recruit";
+import Area from "./components/Area";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -35,6 +36,10 @@ function App() {
 
       <div data-aos="fade-up">
         <Recruit />
+      </div>
+
+      <div data-aos="fade-up">
+        <Area />
       </div>
 
       <div data-aos="fade-up">
