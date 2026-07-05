@@ -32,7 +32,7 @@ function Area() {
 
           <h3>京都府</h3>
           <div className="area-list">
-            <span>京都市</span>
+            <span>京都市全域</span>
             <span>宇治市</span>
             <span>城陽市</span>
             <span>八幡市</span>
@@ -42,7 +42,7 @@ function Area() {
 
           <h3>大阪府</h3>
           <div className="area-list">
-            <span>大阪市</span>
+            <span>大阪市全域</span>
             <span>高槻市</span>
             <span>茨木市</span>
             <span>吹田市</span>
