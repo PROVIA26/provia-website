@@ -18,6 +18,19 @@
   color: #555;
 }
 
+.area-group {
+  margin-top: 40px;
+}
+
+.area-group h3 {
+  margin: 45px 0 20px;
+  padding-left: 15px;
+  border-left: 6px solid #0f62fe;
+  color: #0f62fe;
+  font-size: 1.6rem;
+  text-align: left;
+}
+
 .area-list {
   display: flex;
   flex-wrap: wrap;
@@ -54,6 +67,10 @@
 
   .area h2 {
     font-size: 2rem;
+  }
+
+  .area-group h3 {
+    font-size: 1.4rem;
   }
 
   .area-list span {
