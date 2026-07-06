@@ -38,6 +38,7 @@ function Area() {
             <span>八幡市</span>
             <span>京田辺市</span>
             <span>木津川市</span>
+            <span>福知山市</span>
           </div>
 
           <h3>大阪府</h3>
