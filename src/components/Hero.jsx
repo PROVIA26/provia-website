@@ -11,7 +11,7 @@ function Hero() {
 
       <p>
         軽貨物業界に革新を。<br />
-        物流を、もっとスマートに。
+        お客様と企業を繋ぐ物流サービス
       </p>
 
       <div className="hero-buttons">
