@@ -1,0 +1,534 @@
+/* =====================================
+   PROVIA PREMIUM ABOUT
+===================================== */
+
+.provia-about {
+  width: 100%;
+  background: #ffffff;
+  color: #111111;
+  overflow: hidden;
+}
+
+/* =====================================
+   ABOUT INTRO
+===================================== */
+
+.provia-about-inner {
+  max-width: 1500px;
+  margin: 0 auto;
+
+  padding: 160px 8% 180px;
+
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+
+  gap: 8%;
+  align-items: center;
+}
+
+.provia-section-label,
+.provia-message-label {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+.provia-label-line {
+  width: 35px;
+  height: 1px;
+  background: currentColor;
+}
+
+.provia-about-title {
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: clamp(70px, 9vw, 145px);
+  font-weight: 800;
+
+  line-height: 0.92;
+  letter-spacing: -0.09em;
+
+  margin: 45px 0 0;
+}
+
+.provia-about-title span {
+  color: #a6a6a6;
+}
+
+.provia-about-intro {
+  padding-top: 80px;
+}
+
+.provia-about-catch {
+  font-size: clamp(28px, 3vw, 46px);
+  font-weight: 700;
+
+  line-height: 1.6;
+  letter-spacing: 0.08em;
+
+  margin: 0 0 40px;
+}
+
+.provia-about-description {
+  font-size: 15px;
+  line-height: 2.5;
+
+  color: #666666;
+  letter-spacing: 0.04em;
+
+  margin: 0;
+}
+
+/* =====================================
+   BUSINESS FIELDS
+===================================== */
+
+.provia-business-area {
+  background: #f5f5f5;
+  padding: 120px 8% 140px;
+}
+
+.provia-business-heading {
+  max-width: 1500px;
+  margin: 0 auto 60px;
+}
+
+.provia-business-heading span {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: #777777;
+}
+
+.provia-business-heading h3 {
+  font-size: clamp(30px, 4vw, 52px);
+  font-weight: 700;
+
+  margin: 20px 0 0;
+  letter-spacing: 0.05em;
+}
+
+.provia-business-grid {
+  max-width: 1500px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 1px;
+  background: #d9d9d9;
+  border: 1px solid #d9d9d9;
+}
+
+.provia-business-item {
+  background: #ffffff;
+
+  min-height: 380px;
+  padding: 35px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  transition:
+    background 0.4s ease,
+    color 0.4s ease;
+}
+
+.provia-business-item:hover {
+  background: #111820;
+  color: #ffffff;
+}
+
+.provia-business-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.provia-business-arrow {
+  font-size: 25px;
+  font-weight: 300;
+
+  transition: transform 0.3s ease;
+}
+
+.provia-business-item:hover .provia-business-arrow {
+  transform: translate(5px, -5px);
+}
+
+.provia-business-content h4 {
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: clamp(23px, 2.3vw, 36px);
+  font-weight: 800;
+
+  letter-spacing: -0.05em;
+  line-height: 1.15;
+
+  margin: 0 0 15px;
+  overflow-wrap: anywhere;
+}
+
+.provia-business-content h5 {
+  font-size: 17px;
+  font-weight: 700;
+
+  margin: 0 0 25px;
+}
+
+.provia-business-content p {
+  font-size: 13px;
+  line-height: 2;
+
+  color: #777777;
+  margin: 0;
+}
+
+.provia-business-item:hover .provia-business-content p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* =====================================
+   NUMBERS
+===================================== */
+
+.provia-numbers {
+  background: #ffffff;
+  padding: 150px 8%;
+}
+
+.provia-numbers-inner {
+  max-width: 1500px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+
+  gap: 8%;
+  align-items: center;
+}
+
+.provia-numbers-heading span {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: #777777;
+}
+
+.provia-numbers-heading h3 {
+  font-size: clamp(35px, 4vw, 60px);
+  font-weight: 700;
+
+  line-height: 1.5;
+  margin: 25px 0 0;
+}
+
+.provia-numbers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+.provia-number-item {
+  border-top: 1px solid #cccccc;
+  padding-top: 30px;
+}
+
+.provia-number-value {
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: clamp(45px, 5vw, 80px);
+  font-weight: 800;
+
+  line-height: 1;
+  letter-spacing: -0.08em;
+
+  white-space: nowrap;
+}
+
+.provia-number-value span {
+  font-size: 0.45em;
+  color: #999999;
+  margin-left: 4px;
+}
+
+.provia-number-item p {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 22px 0 8px;
+}
+
+.provia-number-item small {
+  font-size: 9px;
+  letter-spacing: 0.08em;
+  color: #999999;
+}
+
+/* =====================================
+   CEO MESSAGE
+===================================== */
+
+.provia-message {
+  background: #0a1019;
+  color: #ffffff;
+
+  padding: 160px 8%;
+  scroll-margin-top: 90px;
+}
+
+.provia-message-inner {
+  max-width: 1500px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 10%;
+}
+
+.provia-message-label {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.provia-message-left h2 {
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: clamp(55px, 7vw, 110px);
+  font-weight: 800;
+
+  letter-spacing: -0.08em;
+  line-height: 1;
+
+  margin: 45px 0;
+}
+
+.provia-message-left h2 span {
+  color: #8e9eae;
+}
+
+.provia-message-en {
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  line-height: 2;
+
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.provia-message-right h3 {
+  font-size: clamp(28px, 3vw, 44px);
+  font-weight: 700;
+
+  line-height: 1.6;
+  letter-spacing: 0.08em;
+
+  margin: 0 0 50px;
+}
+
+.provia-message-right > p {
+  font-size: 14px;
+  line-height: 2.6;
+
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 0 25px;
+}
+
+.provia-ceo {
+  margin-top: 60px;
+  padding-top: 30px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.provia-ceo > span {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.provia-ceo-name {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  margin-top: 20px;
+}
+
+.provia-ceo-name small {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.provia-ceo-name strong {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media (max-width: 1024px) {
+  .provia-about-inner {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding: 120px 7%;
+  }
+
+  .provia-about-intro {
+    padding-top: 0;
+  }
+
+  .provia-business-area,
+  .provia-numbers,
+  .provia-message {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+
+  .provia-numbers-inner {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .provia-about-inner {
+    padding: 100px 7%;
+    gap: 45px;
+  }
+
+  .provia-about-title {
+    font-size: clamp(62px, 13vw, 100px);
+    margin-top: 30px;
+  }
+
+  .provia-about-catch {
+    font-size: 29px;
+    margin-bottom: 30px;
+  }
+
+  .provia-about-description {
+    font-size: 14px;
+    line-height: 2.3;
+  }
+
+  .provia-business-area {
+    padding: 90px 7%;
+  }
+
+  .provia-business-heading {
+    margin-bottom: 40px;
+  }
+
+  .provia-business-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .provia-business-item {
+    min-height: 290px;
+    padding: 30px;
+  }
+
+  .provia-business-content h4 {
+    font-size: 30px;
+  }
+
+  /* =====================================
+     NUMBERS - MOBILE
+     タイトル左揃え・数字中央揃え
+  ===================================== */
+
+  .provia-numbers {
+    padding: 100px 7%;
+  }
+
+  .provia-numbers-inner {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  /* タイトルだけ左揃え */
+  .provia-numbers-heading {
+    width: 100%;
+    text-align: left;
+  }
+
+  .provia-numbers-heading span {
+    display: block;
+    text-align: left;
+  }
+
+  .provia-numbers-heading h3 {
+    text-align: left;
+  }
+
+  /* 数字と説明文は中央揃え */
+  .provia-numbers-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    width: 100%;
+  }
+
+  .provia-number-item {
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  .provia-number-value {
+    font-size: clamp(55px, 15vw, 75px);
+    text-align: center;
+  }
+
+  .provia-number-item p,
+  .provia-number-item small {
+    text-align: center;
+  }
+
+  /* =====================================
+     CEO MESSAGE
+  ===================================== */
+
+  .provia-message {
+    padding: 100px 7%;
+  }
+
+  .provia-message-inner {
+    grid-template-columns: 1fr;
+    gap: 65px;
+  }
+
+  .provia-message-left h2 {
+    font-size: clamp(55px, 13vw, 90px);
+  }
+
+  .provia-message-right h3 {
+    font-size: 29px;
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 380px) {
+  .provia-about-title {
+    font-size: 57px;
+  }
+
+  .provia-business-content h4 {
+    font-size: 26px;
+  }
+
+  .provia-message-left h2 {
+    font-size: 48px;
+  }
+}

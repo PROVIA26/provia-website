@@ -2,70 +2,190 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9B25WKP4V1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-9B25WKP4V1');
-    </script>
-
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Google Search Console -->
+    <!-- =====================================
+         GOOGLE ANALYTICS
+    ====================================== -->
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-9B25WKP4V1"
+    ></script>
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag("js", new Date());
+
+      gtag("config", "G-9B25WKP4V1");
+    </script>
+
+    <!-- =====================================
+         GOOGLE SEARCH CONSOLE
+    ====================================== -->
+
     <meta
       name="google-site-verification"
       content="kfJkTM0TvsyaFRb9_UqWx77EfL-A8h3ktXATMBq89cc"
     />
 
-    <!-- SEO -->
-    <title>PROVIA | 軽貨物・企業配送・個人宅配送・人材派遣・建設業【滋賀県】</title>
+    <!-- =====================================
+         BASIC SEO
+    ====================================== -->
+
+    <title>
+      PROVIA｜滋賀の軽貨物配送・人材サービス・ホームページ制作
+    </title>
 
     <meta
       name="description"
-      content="PROVIAは滋賀県を拠点に、軽貨物配送・企業配送・個人宅配送・人材派遣・建設業を展開。迅速・丁寧なサービスで企業様・個人様をサポートします。ドライバー・スタッフ募集中。"
-    />
-
-    <meta
-      name="keywords"
-      content="滋賀県,軽貨物,配送,企業配送,個人宅配送,人材派遣,建設業,軽貨物ドライバー,求人,PROVIA"
+      content="PROVIAは滋賀県を拠点に、軽貨物配送・企業間配送・医療配送・人材サービス・ホームページ制作を展開しています。滋賀・京都・大阪を中心に、迅速かつ丁寧なサービスで企業様の課題解決をサポート。配送のご依頼、Web制作のご相談、ドライバーのご応募をお待ちしております。"
     />
 
     <meta name="author" content="PROVIA" />
 
-    <!-- OGP -->
+    <meta name="robots" content="index, follow" />
+
+    <meta name="theme-color" content="#0a1019" />
+
+    <link
+      rel="canonical"
+      href="https://provia-website.vercel.app/"
+    />
+
+    <!-- =====================================
+         FAVICON
+    ====================================== -->
+
+    <link rel="icon" type="image/png" href="/logo.png" />
+
+    <link rel="apple-touch-icon" href="/logo.png" />
+
+    <!-- =====================================
+         OPEN GRAPH / SNS
+    ====================================== -->
+
     <meta property="og:type" content="website" />
+
+    <meta property="og:locale" content="ja_JP" />
+
     <meta property="og:site_name" content="PROVIA" />
+
     <meta
       property="og:title"
-      content="PROVIA | 軽貨物・企業配送・個人宅配送・人材派遣・建設業"
+      content="PROVIA｜滋賀の軽貨物配送・人材サービス・ホームページ制作"
     />
+
     <meta
       property="og:description"
-      content="滋賀県を拠点に軽貨物配送・企業配送・個人宅配送・人材派遣・建設業を展開。"
+      content="挑戦する人と、未来を創る。PROVIAは滋賀県を拠点に、軽貨物配送・人材サービス・Webサイト制作を展開しています。滋賀・京都・大阪を中心に対応。"
     />
-    <meta property="og:image" content="/logo.png" />
-    <meta property="og:url" content="https://provia-website.vercel.app/" />
 
-    <!-- X (Twitter) -->
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      property="og:url"
+      content="https://provia-website.vercel.app/"
+    />
+
+    <meta
+      property="og:image"
+      content="https://provia-website.vercel.app/logo.png"
+    />
+
+    <meta
+      property="og:image:alt"
+      content="PROVIA 公式ロゴ"
+    />
+
+    <!-- =====================================
+         X / TWITTER
+    ====================================== -->
+
+    <meta
+      name="twitter:card"
+      content="summary"
+    />
+
     <meta
       name="twitter:title"
-      content="PROVIA | 軽貨物・企業配送・個人宅配送・人材派遣・建設業"
+      content="PROVIA｜軽貨物配送・人材サービス・Web制作"
     />
+
     <meta
       name="twitter:description"
-      content="滋賀県を拠点に軽貨物配送・企業配送・個人宅配送・人材派遣・建設業を展開。"
+      content="滋賀県を拠点に軽貨物配送・人材サービス・ホームページ制作を展開。挑戦する人と、未来を創る。"
     />
-    <meta name="twitter:image" content="/logo.png" />
+
+    <meta
+      name="twitter:image"
+      content="https://provia-website.vercel.app/logo.png"
+    />
+
+    <!-- =====================================
+         STRUCTURED DATA
+    ====================================== -->
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "PROVIA",
+        "url": "https://provia-website.vercel.app/",
+        "logo": "https://provia-website.vercel.app/logo.png",
+        "description": "滋賀県を拠点に軽貨物配送・人材サービス・Webサイト制作を展開するPROVIA。",
+        "email": "provia.26.saito@gmail.com",
+        "telephone": "+81-70-8494-4484",
+        "address": {
+          "@type": "PostalAddress",
+          "postalCode": "524-0043",
+          "addressRegion": "滋賀県",
+          "addressLocality": "守山市",
+          "streetAddress": "二町町280-66",
+          "addressCountry": "JP"
+        },
+        "areaServed": [
+          {
+            "@type": "AdministrativeArea",
+            "name": "滋賀県"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "京都府"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "大阪府"
+          }
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "PROVIAの事業",
+          "itemListElement": [
+            {
+              "@type": "OfferCatalog",
+              "name": "軽貨物運送事業"
+            },
+            {
+              "@type": "OfferCatalog",
+              "name": "人材サービス事業"
+            },
+            {
+              "@type": "OfferCatalog",
+              "name": "Webサイト制作事業"
+            }
+          ]
+        }
+      }
+    </script>
   </head>
 
   <body>
     <div id="root"></div>
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

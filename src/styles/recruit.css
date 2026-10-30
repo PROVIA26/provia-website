@@ -1,0 +1,370 @@
+/* ========================================
+   PROVIA RECRUIT
+======================================== */
+
+.provia-recruit {
+  position: relative;
+  width: 100%;
+  padding: 150px 8% 60px;
+  background: #0a0d12;
+  color: #fff;
+  overflow: hidden;
+}
+
+.provia-recruit * {
+  box-sizing: border-box;
+}
+
+.provia-recruit-inner {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+/* ========================================
+   LABEL
+======================================== */
+
+.provia-recruit-label {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 55px;
+  color: #b0b5bf;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+.provia-recruit-label-line {
+  display: block;
+  width: 35px;
+  height: 1px;
+  background: #b0b5bf;
+}
+
+/* ========================================
+   MAIN HEADING
+======================================== */
+
+.provia-recruit-heading h2 {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(64px, 10vw, 155px);
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -0.085em;
+}
+
+.provia-recruit-heading h2 span {
+  color: #697383;
+}
+
+.provia-recruit-heading-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: end;
+  margin-top: 75px;
+}
+
+.provia-recruit-jp-title {
+  margin: 0;
+  font-size: clamp(30px, 3.5vw, 52px);
+  font-weight: 700;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+}
+
+.provia-recruit-lead {
+  margin: 0;
+  color: #a8afbb;
+  font-size: 14px;
+  line-height: 2.5;
+  letter-spacing: 0.04em;
+}
+
+.provia-recruit-divider {
+  width: 100%;
+  height: 1px;
+  margin: 100px 0 0;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* ========================================
+   FEATURES
+======================================== */
+
+.provia-recruit-features {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.provia-recruit-feature {
+  min-width: 0;
+  padding: 45px 35px 55px;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+  transition: background 0.35s ease;
+}
+
+.provia-recruit-feature:first-child {
+  padding-left: 0;
+}
+
+.provia-recruit-feature:last-child {
+  border-right: none;
+}
+
+.provia-recruit-feature:hover {
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.provia-recruit-feature-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.provia-recruit-feature-number {
+  color: #a8afbb;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+
+.provia-recruit-feature-arrow {
+  color: #697383;
+  font-size: 22px;
+}
+
+.provia-recruit-feature-en {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(22px, 2.4vw, 37px);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.045em;
+}
+
+.provia-recruit-feature-title {
+  margin: 0 0 20px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.provia-recruit-feature-description {
+  max-width: 350px;
+  margin: 0;
+  color: #a8afbb;
+  font-size: 13px;
+  line-height: 2.2;
+}
+
+/* ========================================
+   BOTTOM CTA
+======================================== */
+
+.provia-recruit-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 50px;
+  margin-top: 70px;
+  padding: 75px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.provia-recruit-bottom-text > span {
+  display: block;
+  margin-bottom: 25px;
+  color: #a8afbb;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+.provia-recruit-bottom-text h3 {
+  margin: 0 0 25px;
+  font-size: clamp(30px, 3.5vw, 52px);
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.provia-recruit-bottom-text p {
+  margin: 0;
+  color: #a8afbb;
+  font-size: 14px;
+  line-height: 2.2;
+}
+
+.provia-recruit-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  min-width: 280px;
+  padding: 25px 30px;
+  background: #f4f4f4;
+  color: #111;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.provia-recruit-button:hover {
+  background: #c8d0da;
+  transform: translateY(-3px);
+}
+
+.provia-recruit-button-arrow {
+  font-size: 23px;
+}
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.provia-recruit-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 35px;
+  color: #697383;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 1024px) {
+  .provia-recruit-heading-bottom {
+    gap: 35px;
+  }
+
+  .provia-recruit-feature {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .provia-recruit-feature-en {
+    font-size: 25px;
+  }
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 768px) {
+  .provia-recruit {
+    padding: 100px 7% 45px;
+  }
+
+  .provia-recruit-label {
+    margin-bottom: 40px;
+  }
+
+  .provia-recruit-heading h2 {
+    font-size: clamp(49px, 11.5vw, 85px);
+    line-height: 1;
+    letter-spacing: -0.08em;
+  }
+
+  .provia-recruit-heading-bottom {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    margin-top: 50px;
+  }
+
+  .provia-recruit-jp-title {
+    font-size: 31px;
+  }
+
+  .provia-recruit-lead {
+    font-size: 13px;
+    line-height: 2.3;
+  }
+
+  .provia-recruit-divider {
+    margin-top: 70px;
+  }
+
+  .provia-recruit-features {
+    grid-template-columns: 1fr;
+  }
+
+  .provia-recruit-feature,
+  .provia-recruit-feature:first-child {
+    padding: 35px 0 45px;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .provia-recruit-feature:last-child {
+    border-bottom: none;
+  }
+
+  .provia-recruit-feature-top {
+    margin-bottom: 35px;
+  }
+
+  .provia-recruit-feature-en {
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+
+  .provia-recruit-feature-title {
+    font-size: 19px;
+  }
+
+  .provia-recruit-feature-description {
+    max-width: 100%;
+  }
+
+  .provia-recruit-bottom {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 40px;
+    margin-top: 25px;
+    padding: 60px 0;
+  }
+
+  .provia-recruit-bottom-text h3 {
+    font-size: 32px;
+  }
+
+  .provia-recruit-button {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .provia-recruit-footer {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+/* ========================================
+   SMALL MOBILE
+======================================== */
+
+@media (max-width: 380px) {
+  .provia-recruit-heading h2 {
+    font-size: 45px;
+  }
+
+  .provia-recruit-jp-title {
+    font-size: 27px;
+  }
+}

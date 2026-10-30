@@ -24,15 +24,12 @@ function App() {
   return (
     <>
       <Header />
+
       <Hero />
 
-      <div data-aos="fade-up">
-        <About />
-      </div>
+      <About />
 
-      <div data-aos="fade-up">
-        <Services />
-      </div>
+      <Services />
 
       <div data-aos="fade-up">
         <Recruit />

@@ -1,71 +1,499 @@
+/* ==================================
+   PROVIA PREMIUM HERO
+================================== */
+
 .hero {
   position: relative;
+  width: 100%;
   min-height: 100vh;
+  min-height: 100svh;
 
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
 
-  text-align: center;
-  padding: 20px;
-
   overflow: hidden;
+  isolation: isolate;
+
+  background: #080d16;
+  color: #ffffff;
 }
 
-/* グラデーション背景 */
-.hero::before {
-  content: "";
+/* ==================================
+   BACKGROUND IMAGE
+================================== */
+
+.hero-background {
   position: absolute;
   inset: 0;
 
-  background: radial-gradient(circle at top, #e6f0ff, #f5f5f7);
-  z-index: -1;
+  background-image: url("/hero-bg.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  transform: scale(1.06);
+  animation: heroZoom 12s ease-out forwards;
+
+  z-index: -3;
 }
 
-/* ロゴ */
-.hero-logo {
-  width: 220px;
-  height: auto;
-  margin-bottom: 20px;
+/* ==================================
+   DARK OVERLAY
+================================== */
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(2, 7, 16, 0.88) 0%,
+      rgba(2, 7, 16, 0.66) 38%,
+      rgba(2, 7, 16, 0.25) 75%,
+      rgba(2, 7, 16, 0.12) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(2, 7, 16, 0.55) 0%,
+      transparent 45%
+    );
+
+  z-index: -2;
 }
 
-/* タイトル */
-.hero h1 {
-  font-size: 96px;
-  margin: 0;
+/* ==================================
+   DECORATIVE LINES
+================================== */
+
+.hero-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+
+  width: 1px;
+  background: rgba(255, 255, 255, 0.08);
+
+  pointer-events: none;
 }
 
-.hero h2 {
-  font-size: 46px;
-  margin: 0;
+.hero-line-left {
+  left: 5%;
+}
+
+.hero-line-right {
+  right: 5%;
+}
+
+/* ==================================
+   MAIN CONTENT
+================================== */
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+
+  width: min(100%, 1500px);
+  margin: 0 auto;
+
+  padding: 150px 10% 160px;
+
+  text-align: left;
+}
+
+/* ==================================
+   TOP LABEL
+================================== */
+
+.hero-label {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  margin-bottom: 36px;
+
+  font-size: 11px;
   font-weight: 600;
+  letter-spacing: 0.22em;
+
+  color: rgba(255, 255, 255, 0.8);
+
+  animation: fadeUp 1s ease both;
 }
 
-.hero p {
-  font-size: 24px;
-  color: #666;
-  line-height: 1.8;
+.hero-label-line {
+  width: 36px;
+  height: 1px;
+
+  background: #ffffff;
+  flex-shrink: 0;
 }
 
-/* ボタン */
+/* ==================================
+   MAIN TITLE
+================================== */
+
+.hero-title {
+  font-family: Arial, Helvetica, sans-serif;
+
+  font-size: clamp(56px, 8vw, 125px);
+  font-weight: 800;
+
+  line-height: 1;
+  letter-spacing: -0.075em;
+
+  margin: 0 0 45px;
+
+  color: #ffffff;
+
+  animation: fadeUp 1.2s ease 0.15s both;
+}
+
+.hero-title span {
+  color: transparent;
+
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.9);
+}
+
+/* ==================================
+   JAPANESE SUBTITLE
+================================== */
+
+.hero-subtitle {
+  font-size: clamp(22px, 2.2vw, 34px);
+  font-weight: 600;
+
+  letter-spacing: 0.12em;
+  line-height: 1.6;
+
+  margin: 0 0 22px;
+
+  color: #ffffff;
+
+  animation: fadeUp 1.2s ease 0.3s both;
+}
+
+/* ==================================
+   DESCRIPTION
+================================== */
+
+.hero-description {
+  font-size: clamp(14px, 1.2vw, 17px);
+
+  line-height: 2.2;
+  letter-spacing: 0.1em;
+
+  color: rgba(255, 255, 255, 0.82);
+
+  margin: 0;
+
+  animation: fadeUp 1.2s ease 0.45s both;
+}
+
+/* ==================================
+   BUTTONS
+================================== */
+
 .hero-buttons {
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
   gap: 16px;
-  margin-top: 20px;
+  margin-top: 48px;
+
+  animation: fadeUp 1.2s ease 0.6s both;
 }
 
-.primary-btn {
-  padding: 14px 28px;
-  border-radius: 999px;
-  background: #0071e3;
-  color: white;
+.hero-btn-primary,
+.hero-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+
+  min-width: 210px;
+  min-height: 58px;
+
+  padding: 0 25px;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+
   text-decoration: none;
+
+  transition: all 0.3s ease;
 }
 
-.link-btn {
-  font-size: 16px;
-  color: #0071e3;
-  text-decoration: none;
-  font-weight: 500;
+.hero-btn-primary {
+  background: #ffffff;
+  color: #101010;
+
+  border: 1px solid #ffffff;
+}
+
+.hero-btn-primary:hover {
+  background: transparent;
+  color: #ffffff;
+
+  transform: translateY(-3px);
+}
+
+.hero-btn-secondary {
+  background: transparent;
+  color: #ffffff;
+
+  border: 1px solid rgba(255, 255, 255, 0.65);
+}
+
+.hero-btn-secondary:hover {
+  background: #ffffff;
+  color: #101010;
+
+  transform: translateY(-3px);
+}
+
+.hero-btn-primary span,
+.hero-btn-secondary span {
+  font-size: 19px;
+  font-weight: 400;
+}
+
+/* ==================================
+   BOTTOM
+================================== */
+
+.hero-bottom {
+  position: absolute;
+
+  left: 10%;
+  right: 10%;
+  bottom: 35px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  z-index: 2;
+}
+
+.hero-bottom-left {
+  font-size: 11px;
+  letter-spacing: 0.18em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.hero-scroll {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  font-size: 10px;
+  letter-spacing: 0.18em;
+
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.hero-scroll-line {
+  width: 65px;
+  height: 1px;
+
+  background: rgba(255, 255, 255, 0.7);
+
+  transform-origin: left;
+
+  animation: scrollLine 2s ease-in-out infinite;
+}
+
+/* ==================================
+   ANIMATIONS
+================================== */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroZoom {
+  from {
+    transform: scale(1.06);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes scrollLine {
+  0% {
+    transform: scaleX(0.3);
+    opacity: 0.3;
+  }
+
+  50% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scaleX(0.3);
+    opacity: 0.3;
+  }
+}
+
+/* ==================================
+   TABLET
+================================== */
+
+@media (max-width: 1024px) {
+  .hero-content {
+    padding: 150px 8% 150px;
+  }
+
+  .hero-title {
+    font-size: clamp(56px, 9vw, 100px);
+  }
+
+  .hero-bottom {
+    left: 8%;
+    right: 8%;
+  }
+}
+
+/* ==================================
+   MOBILE
+================================== */
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 100svh;
+  }
+
+  .hero-background {
+    background-position: 55% center;
+  }
+
+  .hero-overlay {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(2, 7, 16, 0.85),
+        rgba(2, 7, 16, 0.45)
+      ),
+      linear-gradient(
+        0deg,
+        rgba(2, 7, 16, 0.7),
+        transparent 50%
+      );
+  }
+
+  .hero-content {
+    padding: 130px 7% 135px;
+  }
+
+  .hero-label {
+    font-size: 9px;
+    letter-spacing: 0.1em;
+
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+
+  .hero-label-line {
+    width: 22px;
+  }
+
+  .hero-title {
+    font-size: clamp(45px, 10vw, 75px);
+
+    line-height: 1.05;
+    letter-spacing: -0.075em;
+
+    margin-bottom: 32px;
+  }
+
+  .hero-subtitle {
+    font-size: clamp(19px, 5vw, 25px);
+
+    letter-spacing: 0.05em;
+    margin-bottom: 18px;
+  }
+
+  .hero-description {
+    font-size: 13px;
+    line-height: 2;
+  }
+
+  .hero-buttons {
+    margin-top: 35px;
+    gap: 12px;
+  }
+
+  .hero-btn-primary,
+  .hero-btn-secondary {
+    width: 100%;
+    min-width: 0;
+    min-height: 54px;
+  }
+
+  .hero-bottom {
+    left: 7%;
+    right: 7%;
+    bottom: 24px;
+  }
+
+  .hero-bottom-left {
+    font-size: 9px;
+  }
+
+  .hero-scroll {
+    font-size: 8px;
+    gap: 10px;
+  }
+
+  .hero-scroll-line {
+    width: 30px;
+  }
+
+  .hero-line-left {
+    left: 3%;
+  }
+
+  .hero-line-right {
+    right: 3%;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero-title {
+    font-size: 43px;
+  }
+
+  .hero-label {
+    font-size: 8px;
+  }
+}
+
+/* ==================================
+   REDUCED MOTION
+================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-background,
+  .hero-label,
+  .hero-title,
+  .hero-subtitle,
+  .hero-description,
+  .hero-buttons,
+  .hero-scroll-line {
+    animation: none;
+  }
 }

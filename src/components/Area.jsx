@@ -1,62 +1,138 @@
 import "../styles/area.css";
 
+const areas = [
+  {
+    number: "01",
+    english: "SHIGA",
+    japanese: "滋賀県",
+    label: "MAIN AREA",
+    cities: [
+      "大津市",
+      "草津市",
+      "守山市",
+      "栗東市",
+      "野洲市",
+      "湖南市",
+      "甲賀市",
+      "東近江市",
+      "近江八幡市",
+      "彦根市",
+      "長浜市",
+      "米原市",
+    ],
+  },
+  {
+    number: "02",
+    english: "KYOTO",
+    japanese: "京都府",
+    label: "SERVICE AREA",
+    cities: [
+      "京都市全域",
+      "宇治市",
+      "城陽市",
+      "八幡市",
+      "京田辺市",
+      "木津川市",
+      "福知山市",
+    ],
+  },
+  {
+    number: "03",
+    english: "OSAKA",
+    japanese: "大阪府",
+    label: "SERVICE AREA",
+    cities: [
+      "大阪市全域",
+      "高槻市",
+      "茨木市",
+      "吹田市",
+      "枚方市",
+      "寝屋川市",
+      "東大阪市",
+    ],
+  },
+];
+
 function Area() {
   return (
-    <section className="area">
-      <div className="container">
+    <section className="provia-area" id="area">
+      <div className="provia-area-inner">
 
-        <h2>対応エリア</h2>
+        <div className="provia-area-header">
+          <div className="provia-area-heading">
+            <div className="provia-area-label">
+              <span className="provia-area-label-line"></span>
+              OUR NETWORK
+            </div>
 
-        <p className="area-text">
-          PROVIAでは滋賀県を拠点に、近畿圏全体で
-          軽貨物配送・建設業・人材派遣サービスを提供しております。
-        </p>
-
-        <div className="area-group">
-
-          <h3>滋賀県</h3>
-          <div className="area-list">
-            <span>大津市</span>
-            <span>草津市</span>
-            <span>守山市</span>
-            <span>栗東市</span>
-            <span>野洲市</span>
-            <span>湖南市</span>
-            <span>甲賀市</span>
-            <span>東近江市</span>
-            <span>近江八幡市</span>
-            <span>彦根市</span>
-            <span>長浜市</span>
-            <span>米原市</span>
+            <h2>
+              OUR
+              <br />
+              <span>COVERAGE.</span>
+            </h2>
           </div>
 
-          <h3>京都府</h3>
-          <div className="area-list">
-            <span>京都市全域</span>
-            <span>宇治市</span>
-            <span>城陽市</span>
-            <span>八幡市</span>
-            <span>京田辺市</span>
-            <span>木津川市</span>
-            <span>福知山市</span>
-          </div>
+          <div className="provia-area-intro">
+            <span>対応エリア</span>
 
-          <h3>大阪府</h3>
-          <div className="area-list">
-            <span>大阪市全域</span>
-            <span>高槻市</span>
-            <span>茨木市</span>
-            <span>吹田市</span>
-            <span>枚方市</span>
-            <span>寝屋川市</span>
-            <span>東大阪市</span>
-          </div>
+            <h3>
+              地域に根ざし、
+              <br />
+              より広いフィールドへ。
+            </h3>
 
+            <p>
+              PROVIAは滋賀県を拠点に、
+              京都府・大阪府を中心としたエリアで
+              事業を展開しています。
+              <br />
+              地域とのつながりを大切にしながら、
+              お客様の多様なニーズにお応えします。
+            </p>
+          </div>
         </div>
 
-        <p className="area-bottom">
-          上記以外の地域につきましても、お気軽にお問い合わせください。
-        </p>
+        <div className="provia-area-grid">
+          {areas.map((area) => (
+            <div className="provia-area-card" key={area.number}>
+
+              <div className="provia-area-card-top">
+                <span>{area.number}</span>
+                <span>{area.label}</span>
+              </div>
+
+              <div className="provia-area-card-title">
+                <h3>{area.english}</h3>
+                <p>{area.japanese}</p>
+              </div>
+
+              <div className="provia-area-card-divider"></div>
+
+              <div className="provia-area-cities">
+                {area.cities.map((city) => (
+                  <span key={city}>{city}</span>
+                ))}
+              </div>
+
+            </div>
+          ))}
+        </div>
+
+        <div className="provia-area-bottom">
+          <div>
+            <span>BEYOND THE AREA</span>
+            <p>
+              記載のない地域についても、
+              <br />
+              まずはお気軽にご相談ください。
+            </p>
+          </div>
+
+          <a href="#contact" className="provia-area-button">
+            お問い合わせ
+            <span>↗</span>
+          </a>
+        </div>
 
       </div>
     </section>

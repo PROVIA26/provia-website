@@ -1,45 +1,556 @@
-.contact {
-  padding: 120px 20px;
-  text-align: center;
-  background: #f5f5f7;
+/* =========================================
+   PROVIA PREMIUM CONTACT
+========================================= */
+
+.provia-contact {
+  position: relative;
+  width: 100%;
+  padding: 150px 8%;
+  background: #f5f6f7;
+  color: #111820;
+  overflow: hidden;
+  scroll-margin-top: 80px;
 }
 
-.contact h2 {
-  font-size: 48px;
-  margin-bottom: 10px;
+.provia-contact,
+.provia-contact * {
+  box-sizing: border-box;
 }
 
-.contact-sub {
-  color: #666;
-  margin-bottom: 40px;
-}
+/* =========================================
+   CONTAINER
+========================================= */
 
-.contact-form {
-  max-width: 500px;
+.provia-contact-inner {
+  width: 100%;
+  max-width: 1500px;
   margin: 0 auto;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.provia-contact-header {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: end;
+  gap: 8%;
+  margin-bottom: 90px;
+}
+
+.provia-contact-label {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 45px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: #66717e;
+}
+
+.provia-contact-label-line {
+  display: block;
+  width: 35px;
+  height: 1px;
+  background: #66717e;
+  flex-shrink: 0;
+}
+
+.provia-contact-heading {
+  min-width: 0;
+}
+
+.provia-contact-heading h2 {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(60px, 8vw, 130px);
+  font-weight: 800;
+  line-height: 0.94;
+  letter-spacing: -0.085em;
+  color: #101820;
+}
+
+.provia-contact-heading h2 span {
+  color: #8996a3;
+}
+
+/* =========================================
+   HEADER INTRO
+========================================= */
+
+.provia-contact-intro {
+  min-width: 0;
+}
+
+.provia-contact-intro > span {
+  display: block;
+  margin-bottom: 25px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: #788594;
+}
+
+.provia-contact-intro h3 {
+  margin: 0 0 25px;
+  font-size: clamp(25px, 2.8vw, 42px);
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: 0.06em;
+}
+
+.provia-contact-intro p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 2.4;
+  letter-spacing: 0.04em;
+  color: #69737e;
+}
+
+/* =========================================
+   CONTENT LAYOUT
+========================================= */
+
+.provia-contact-content {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  align-items: stretch;
+  width: 100%;
+  min-width: 0;
+  background: #ffffff;
+  border: 1px solid #e1e5e9;
+}
+
+/* =========================================
+   LEFT INFORMATION PANEL
+========================================= */
+
+.provia-contact-info {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  justify-content: space-between;
+  min-width: 0;
+  padding: 65px 55px;
+  background: #101a27;
+  color: #ffffff;
 }
 
-.contact-form input,
-.contact-form textarea {
-  padding: 14px;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-  font-size: 16px;
+.provia-contact-info-top > span {
+  display: block;
+  margin-bottom: 40px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: #a3b2c1;
 }
 
-.contact-form button {
-  padding: 14px;
-  border: none;
-  border-radius: 999px;
-  background: #0071e3;
-  color: white;
-  font-size: 16px;
+.provia-contact-info-top h3 {
+  margin: 0 0 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(30px, 3.1vw, 52px);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.055em;
+  overflow-wrap: anywhere;
+}
+
+.provia-contact-info-top p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 2.3;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* =========================================
+   CONTACT DETAILS
+========================================= */
+
+.provia-contact-info-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  margin-top: 100px;
+  padding-top: 45px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.provia-contact-info-item > span {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: #9eafbf;
+}
+
+.provia-contact-info-item a,
+.provia-contact-info-item p {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.provia-contact-info-item a {
+  transition: color 0.3s ease;
+}
+
+.provia-contact-info-item a:hover {
+  color: #aebfd0;
+}
+
+/* =========================================
+   RIGHT FORM PANEL
+========================================= */
+
+.provia-contact-form-wrapper {
+  min-width: 0;
+  padding: 65px 60px 70px;
+  background: #ffffff;
+}
+
+.provia-contact-form-heading {
+  margin-bottom: 50px;
+}
+
+.provia-contact-form-heading > span {
+  display: block;
+  margin-bottom: 18px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: #8995a1;
+}
+
+.provia-contact-form-heading h3 {
+  margin: 0 0 15px;
+  font-size: clamp(23px, 2.2vw, 32px);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.provia-contact-form-heading p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 2;
+  color: #78838e;
+}
+
+/* =========================================
+   FORM
+========================================= */
+
+.provia-contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+
+.provia-contact-field {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+}
+
+.provia-contact-field label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #25313d;
+}
+
+.provia-contact-field label span {
+  display: inline-block;
+  padding: 4px 7px;
+  background: #edf0f3;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #687582;
+}
+
+/* =========================================
+   INPUT / SELECT / TEXTAREA
+========================================= */
+
+.provia-contact-field input,
+.provia-contact-field select,
+.provia-contact-field textarea {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  padding: 17px 18px;
+  background: #f7f8f9;
+  border: 1px solid #e0e5e9;
+  border-radius: 0;
+  color: #101820;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  outline: none;
+  transition:
+    border-color 0.3s ease,
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.provia-contact-field input::placeholder,
+.provia-contact-field textarea::placeholder {
+  color: #a0a9b2;
+}
+
+.provia-contact-field input:focus,
+.provia-contact-field select:focus,
+.provia-contact-field textarea:focus {
+  background: #ffffff;
+  border-color: #52677c;
+  box-shadow: 0 0 0 3px rgba(82, 103, 124, 0.08);
+}
+
+.provia-contact-field textarea {
+  min-height: 180px;
+  resize: vertical;
+}
+
+.provia-contact-field select {
   cursor: pointer;
 }
 
-.contact-form button:hover {
-  opacity: 0.9;
+.provia-contact-field-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+/* =========================================
+   SUBMIT AREA
+========================================= */
+
+.provia-contact-submit {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 10px;
+}
+
+.provia-contact-submit > p {
+  margin: 0;
+  font-size: 11px;
+  line-height: 2;
+  color: #84909b;
+}
+
+.provia-contact-submit button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  min-height: 65px;
+  padding: 0 28px;
+  background: #101a27;
+  border: 1px solid #101a27;
+  border-radius: 0;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  cursor: pointer;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.provia-contact-submit button:hover {
+  background: #ffffff;
+  color: #101a27;
+  transform: translateY(-3px);
+}
+
+.provia-contact-submit-arrow {
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+  .provia-contact {
+    padding: 120px 7%;
+  }
+
+  .provia-contact-header {
+    grid-template-columns: 1fr;
+    gap: 45px;
+    margin-bottom: 65px;
+  }
+
+  .provia-contact-content {
+    grid-template-columns: 1fr 1.2fr;
+  }
+
+  .provia-contact-info {
+    padding: 50px 35px;
+  }
+
+  .provia-contact-form-wrapper {
+    padding: 50px 35px;
+  }
+
+  .provia-contact-field-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+  /* セクション自体を画面幅いっぱいにする */
+  .provia-contact {
+    width: 100%;
+    padding: 100px 0;
+  }
+
+  /* タイトル部分だけ左右に余白を残す */
+  .provia-contact-header {
+    padding: 0 7%;
+    gap: 45px;
+    margin-bottom: 55px;
+  }
+
+  .provia-contact-label {
+    margin-bottom: 30px;
+    font-size: 10px;
+  }
+
+  .provia-contact-heading h2 {
+    font-size: clamp(48px, 11vw, 78px);
+  }
+
+  .provia-contact-intro h3 {
+    font-size: 27px;
+  }
+
+  .provia-contact-intro p {
+    font-size: 13px;
+    line-height: 2.3;
+  }
+
+  /* 黒パネルと白フォームを画面幅いっぱいにする */
+  .provia-contact-content {
+    width: 100%;
+    grid-template-columns: 1fr;
+    border: none;
+  }
+
+  /* 会社情報 */
+  .provia-contact-info {
+    padding: 45px 7%;
+  }
+
+  .provia-contact-info-top > span {
+    margin-bottom: 30px;
+  }
+
+  .provia-contact-info-top h3 {
+    font-size: clamp(30px, 8vw, 45px);
+  }
+
+  .provia-contact-info-top p {
+    font-size: 12px;
+  }
+
+  .provia-contact-info-bottom {
+    margin-top: 65px;
+    padding-top: 35px;
+    gap: 30px;
+  }
+
+  .provia-contact-info-item a,
+  .provia-contact-info-item p {
+    font-size: 12px;
+  }
+
+  /* フォーム */
+  .provia-contact-form-wrapper {
+    padding: 45px 7% 50px;
+  }
+
+  .provia-contact-form-heading {
+    margin-bottom: 40px;
+  }
+
+  .provia-contact-form-heading h3 {
+    font-size: 24px;
+  }
+
+  .provia-contact-form {
+    gap: 25px;
+  }
+
+  .provia-contact-field-row {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .provia-contact-field input,
+  .provia-contact-field select,
+  .provia-contact-field textarea {
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  .provia-contact-submit button {
+    justify-content: center;
+    gap: 25px;
+    min-height: 60px;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 380px) {
+  .provia-contact-heading h2 {
+    font-size: 43px;
+  }
+
+  .provia-contact-info-top h3 {
+    font-size: 28px;
+  }
+}
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .provia-contact-info-item a,
+  .provia-contact-field input,
+  .provia-contact-field select,
+  .provia-contact-field textarea,
+  .provia-contact-submit button {
+    transition: none;
+  }
 }

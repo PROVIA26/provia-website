@@ -1,86 +1,464 @@
-.area {
-  padding: 100px 20px;
-  background: #f8f9fa;
-  text-align: center;
+/* =========================================
+   PROVIA PREMIUM AREA
+========================================= */
+
+.provia-area {
+  position: relative;
+  width: 100%;
+  padding: 150px 8%;
+  background: #0a1019;
+  color: #ffffff;
+  overflow: hidden;
+  scroll-margin-top: 80px;
 }
 
-.area h2 {
-  font-size: 2.4rem;
-  margin-bottom: 25px;
-  color: #222;
+/* =========================================
+   CONTAINER
+========================================= */
+
+.provia-area-inner {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
-.area-text {
-  max-width: 800px;
-  margin: 0 auto 45px;
-  font-size: 1.05rem;
-  line-height: 2;
-  color: #555;
+/* =========================================
+   HEADER
+========================================= */
+
+.provia-area-header {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 8%;
+  align-items: end;
+  margin-bottom: 90px;
 }
 
-.area-group {
-  margin-top: 40px;
-}
+.provia-area-label {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 
-.area-group h3 {
-  margin: 45px 0 20px;
-  color: #0f62fe;
-  font-size: 1.6rem;
+  margin-bottom: 45px;
+
+  font-size: 11px;
   font-weight: 700;
-  text-align: center;
+  letter-spacing: 0.2em;
+
+  color: rgba(255, 255, 255, 0.75);
 }
 
-.area-list {
+.provia-area-label-line {
+  display: block;
+  width: 35px;
+  height: 1px;
+  background: currentColor;
+  flex-shrink: 0;
+}
+
+.provia-area-heading h2 {
+  margin: 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(65px, 8vw, 135px);
+  font-weight: 800;
+
+  line-height: 0.94;
+  letter-spacing: -0.085em;
+}
+
+.provia-area-heading h2 span {
+  color: #8e9eae;
+}
+
+.provia-area-intro > span {
+  display: block;
+  margin-bottom: 25px;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+
+  color: #9eacba;
+}
+
+.provia-area-intro h3 {
+  margin: 0 0 25px;
+
+  font-size: clamp(25px, 2.8vw, 42px);
+  font-weight: 700;
+
+  line-height: 1.6;
+  letter-spacing: 0.06em;
+}
+
+.provia-area-intro p {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 2.4;
+  letter-spacing: 0.04em;
+
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* =========================================
+   AREA GRID
+========================================= */
+
+.provia-area-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* =========================================
+   AREA CARD
+========================================= */
+
+.provia-area-card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  min-width: 0;
+  min-height: 520px;
+  padding: 35px;
+
+  background: #101a27;
+
+  transition:
+    background 0.35s ease,
+    transform 0.35s ease;
+}
+
+.provia-area-card:hover {
+  background: #18283a;
+}
+
+.provia-area-card:first-child {
+  background: #172536;
+}
+
+.provia-area-card:first-child:hover {
+  background: #20344a;
+}
+
+/* =========================================
+   CARD TOP
+========================================= */
+
+.provia-area-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.provia-area-card:first-child .provia-area-card-top span:last-child {
+  color: #b7c8d9;
+}
+
+/* =========================================
+   CARD TITLE
+========================================= */
+
+.provia-area-card-title {
+  margin-top: 95px;
+}
+
+.provia-area-card-title h3 {
+  margin: 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(40px, 4.5vw, 72px);
+  font-weight: 800;
+
+  line-height: 1;
+  letter-spacing: -0.07em;
+
+  overflow-wrap: anywhere;
+}
+
+.provia-area-card-title p {
+  margin: 15px 0 0;
+
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* =========================================
+   DIVIDER
+========================================= */
+
+.provia-area-card-divider {
+  width: 100%;
+  height: 1px;
+
+  margin: 35px 0;
+
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* =========================================
+   CITIES
+========================================= */
+
+.provia-area-cities {
   display: flex;
   flex-wrap: wrap;
+  align-content: flex-start;
+
+  gap: 10px;
+}
+
+.provia-area-cities span {
+  display: inline-flex;
+  align-items: center;
   justify-content: center;
-  gap: 16px;
-  margin-bottom: 35px;
+
+  min-height: 34px;
+  padding: 7px 12px;
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  line-height: 1.4;
+
+  color: rgba(255, 255, 255, 0.75);
 }
 
-.area-list span {
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 50px;
-  padding: 12px 24px;
+/* =========================================
+   BOTTOM CTA
+========================================= */
+
+.provia-area-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+
+  margin-top: 65px;
+  padding-top: 35px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.provia-area-bottom > div > span {
+  display: block;
+
+  margin-bottom: 15px;
+
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+
+  color: #8e9eae;
+}
+
+.provia-area-bottom p {
+  margin: 0;
+
+  font-size: 17px;
   font-weight: 600;
-  transition: all 0.3s ease;
+  line-height: 1.9;
+  letter-spacing: 0.04em;
 }
 
-.area-list span:hover {
+.provia-area-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+
+  flex-shrink: 0;
+
+  min-width: 235px;
+  min-height: 60px;
+  padding: 0 25px;
+
+  background: #ffffff;
+  border: 1px solid #ffffff;
+
+  color: #101820;
+  text-decoration: none;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.provia-area-button:hover {
+  background: transparent;
+  color: #ffffff;
   transform: translateY(-3px);
-  border-color: #0f62fe;
-  color: #0f62fe;
 }
 
-.area-bottom {
-  margin-top: 40px;
-  color: #666;
-  font-size: 1rem;
-  line-height: 1.8;
+.provia-area-button span {
+  margin-left: 30px;
+  font-size: 20px;
+  font-weight: 400;
 }
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+  .provia-area {
+    padding: 120px 7%;
+  }
+
+  .provia-area-header {
+    grid-template-columns: 1fr;
+    gap: 45px;
+    margin-bottom: 65px;
+  }
+
+  .provia-area-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .provia-area-card {
+    min-height: 460px;
+  }
+
+  .provia-area-card-title {
+    margin-top: 70px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
 
 @media (max-width: 768px) {
-  .area {
-    padding: 80px 20px;
+  .provia-area {
+    padding: 100px 7%;
   }
 
-  .area h2 {
-    font-size: 2rem;
+  .provia-area-header {
+    gap: 45px;
+    margin-bottom: 55px;
   }
 
-  .area-group h3 {
-    font-size: 1.4rem;
+  .provia-area-label {
+    margin-bottom: 30px;
+    font-size: 10px;
   }
 
-  .area-list span {
-    width: 45%;
+  .provia-area-heading h2 {
+    font-size: clamp(48px, 11vw, 78px);
+  }
+
+  .provia-area-intro h3 {
+    font-size: 27px;
+  }
+
+  .provia-area-intro p {
+    font-size: 13px;
+    line-height: 2.3;
+  }
+
+  .provia-area-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .provia-area-card {
+    min-height: 0;
+    padding: 30px 25px 35px;
+  }
+
+  .provia-area-card-title {
+    margin-top: 60px;
+  }
+
+  .provia-area-card-title h3 {
+    font-size: clamp(46px, 12vw, 68px);
+  }
+
+  .provia-area-card-divider {
+    margin: 30px 0;
+  }
+
+  .provia-area-cities {
+    gap: 8px;
+  }
+
+  .provia-area-cities span {
+    font-size: 10px;
+    padding: 7px 10px;
+  }
+
+  .provia-area-bottom {
+    flex-direction: column;
+    align-items: stretch;
+
+    margin-top: 50px;
+    gap: 30px;
+  }
+
+  .provia-area-bottom p {
+    font-size: 16px;
+  }
+
+  .provia-area-button {
+    width: 100%;
+    min-width: 0;
+    justify-content: center;
+    gap: 25px;
     text-align: center;
+  }
+
+  .provia-area-button span {
+    margin-left: 0;
   }
 }
 
-@media (max-width: 480px) {
-  .area-list span {
-    width: 100%;
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 380px) {
+  .provia-area-heading h2 {
+    font-size: 43px;
+  }
+
+  .provia-area-card {
+    padding: 25px 20px 30px;
+  }
+
+  .provia-area-card-title h3 {
+    font-size: 43px;
+  }
+}
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .provia-area-card,
+  .provia-area-button {
+    transition: none;
   }
 }

@@ -1,0 +1,423 @@
+/* =========================================
+   PROVIA PREMIUM FOOTER
+========================================= */
+
+.provia-footer {
+  position: relative;
+  width: 100%;
+  padding: 130px 8% 30px;
+  background: #0a1019;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.provia-footer,
+.provia-footer * {
+  box-sizing: border-box;
+}
+
+.provia-footer-inner {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+/* TOP MESSAGE */
+
+.provia-footer-top {
+  padding-bottom: 110px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.provia-footer-top-label {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 45px;
+  color: #9cabb9;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+.provia-footer-line {
+  display: block;
+  width: 35px;
+  height: 1px;
+  background: #9cabb9;
+  flex-shrink: 0;
+}
+
+.provia-footer-top h2 {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(65px, 8.5vw, 140px);
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -0.08em;
+}
+
+.provia-footer-top h2 span {
+  color: #8898a8;
+}
+
+.provia-footer-top-bottom {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.provia-footer-top-bottom p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 2;
+  letter-spacing: 0.05em;
+}
+
+/* CONTACT BUTTON */
+
+.provia-footer-contact-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  min-width: 250px;
+  min-height: 65px;
+  padding: 0 28px;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  color: #101820;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-decoration: none;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.provia-footer-contact-btn:hover {
+  background: transparent;
+  color: #ffffff;
+  transform: translateY(-3px);
+}
+
+.provia-footer-contact-btn span {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+/* MAIN FOOTER */
+
+.provia-footer-main {
+  display: grid;
+  grid-template-columns: 1.5fr 0.8fr 1fr 1.4fr;
+  gap: 45px;
+  padding: 90px 0 100px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* BRAND */
+
+.provia-footer-brand {
+  min-width: 0;
+}
+
+.provia-footer-logo {
+  display: inline-block;
+  margin-bottom: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 38px;
+  font-weight: 800;
+  letter-spacing: -0.07em;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.provia-footer-logo span {
+  color: #8e9eae;
+}
+
+.provia-footer-brand p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+  line-height: 2.3;
+  letter-spacing: 0.03em;
+}
+
+/* COLUMNS */
+
+.provia-footer-column {
+  min-width: 0;
+}
+
+.provia-footer-column h3 {
+  margin: 0 0 35px;
+  color: #9eacba;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+.provia-footer-column nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.provia-footer-column nav a {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.provia-footer-column nav a:hover {
+  color: #ffffff;
+}
+
+/* BUSINESS */
+
+.provia-footer-business {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.provia-footer-business p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+/* COMPANY INFORMATION */
+
+.provia-footer-company-info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.provia-footer-company-info p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+  line-height: 2;
+  overflow-wrap: anywhere;
+}
+
+.provia-footer-company-info p > span {
+  display: block;
+  margin-bottom: 7px;
+  color: #8e9eae;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.provia-footer-company-info a {
+  color: inherit;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.provia-footer-company-info a:hover {
+  text-decoration: underline;
+}
+
+/* LARGE BRAND */
+
+.provia-footer-large-logo {
+  width: 100%;
+  padding-top: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(90px, 19vw, 340px);
+  font-weight: 800;
+  line-height: 0.85;
+  letter-spacing: -0.09em;
+  white-space: nowrap;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.09);
+  user-select: none;
+}
+
+.provia-footer-large-logo span {
+  color: rgba(142, 158, 174, 0.2);
+}
+
+/* BOTTOM */
+
+.provia-footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  padding-top: 45px;
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+}
+
+.provia-footer-bottom a {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.provia-footer-bottom a:hover {
+  color: #ffffff;
+}
+
+/* TABLET */
+
+@media (max-width: 1100px) {
+  .provia-footer {
+    padding: 110px 7% 30px;
+  }
+
+  .provia-footer-main {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 60px 45px;
+  }
+
+  .provia-footer-top h2 {
+    font-size: clamp(60px, 9vw, 105px);
+  }
+
+  .provia-footer-large-logo {
+    font-size: 18vw;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .provia-footer {
+    padding: 90px 7% 30px;
+  }
+
+  .provia-footer-top {
+    padding-bottom: 75px;
+  }
+
+  .provia-footer-top-label {
+    margin-bottom: 35px;
+    font-size: 10px;
+  }
+
+  .provia-footer-top h2 {
+    font-size: clamp(44px, 10vw, 75px);
+    line-height: 1;
+  }
+
+  .provia-footer-top-bottom {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 35px;
+    margin-top: 40px;
+  }
+
+  .provia-footer-top-bottom p {
+    font-size: 14px;
+    line-height: 2;
+  }
+
+  .provia-footer-contact-btn {
+    width: 100%;
+    min-width: 0;
+    justify-content: center;
+    gap: 30px;
+    min-height: 60px;
+  }
+
+  .provia-footer-main {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 55px 25px;
+    padding: 70px 0;
+  }
+
+  .provia-footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .provia-footer-logo {
+    font-size: 35px;
+  }
+
+  .provia-footer-column h3 {
+    margin-bottom: 25px;
+  }
+
+  .provia-footer-column nav {
+    gap: 17px;
+  }
+
+  .provia-footer-column nav a,
+  .provia-footer-business p {
+    font-size: 11px;
+  }
+
+  .provia-footer-company {
+    grid-column: 1 / -1;
+  }
+
+  .provia-footer-company-info {
+    gap: 22px;
+  }
+
+  .provia-footer-large-logo {
+    padding-top: 40px;
+    font-size: 18vw;
+  }
+
+  .provia-footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding-top: 35px;
+  }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 380px) {
+  .provia-footer-top h2 {
+    font-size: 40px;
+  }
+
+  .provia-footer-main {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .provia-footer-brand,
+  .provia-footer-company {
+    grid-column: auto;
+  }
+
+  .provia-footer-large-logo {
+    font-size: 17vw;
+  }
+}
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+  .provia-footer-contact-btn,
+  .provia-footer-column nav a {
+    transition: none;
+  }
+}
