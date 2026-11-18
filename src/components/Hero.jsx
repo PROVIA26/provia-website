@@ -2,7 +2,11 @@ import "../styles/hero.css";
 
 function Hero() {
   return (
-    <section className="hero" id="hero">
+    <section
+      className="hero"
+      id="hero"
+      aria-label="PROVIA｜滋賀県の軽貨物配送・人材サービス・ホームページ制作"
+    >
 
       {/* 背景 */}
       <div className="hero-background"></div>
@@ -31,9 +35,9 @@ function Hero() {
         </h2>
 
         <p className="hero-description">
-          物流・人材・Webの力で、
+          滋賀県を拠点に、軽貨物配送・人材サービス・Web制作を展開。
           <br />
-          ビジネスの可能性を広げる。
+          物流・人材・Webの力で、ビジネスの可能性を広げる。
         </p>
 
         <div className="hero-buttons">
